@@ -1,0 +1,12 @@
+<p>Home Html</p>
+<p>User name: ({{username}})</p>
+<p>Total User: ({{totaluser}})</p>
+<form>
+<input type="text" placeholder="name" name="name" [(ngModel)]="txtValue" />
+<br>
+<p>{{txtValue}}</p>
+<p *ngFor="let g1 of goal" >
+  {{g1}}
+</p>
+<input type="submit" [value]="btnName" (click)="addItem()" />
+</form>
